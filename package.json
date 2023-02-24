@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "inquirer": "^6.5.0"
+  },
+  "name": "oop-team-profile-generator",
+  "description": "node.js oop application to generate html file with team profiles ",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "jest": "^29.4.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsannanoga/OOP-team-profile-generator.git"
+  },
+  "keywords": [
+    "team"
+  ],
+  "author": "Anna Noga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrsannanoga/OOP-team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/mrsannanoga/OOP-team-profile-generator#readme"
+}
