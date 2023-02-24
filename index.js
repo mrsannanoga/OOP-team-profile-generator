@@ -239,10 +239,9 @@ const internQuestions = () => {
 }
 
 const generateTeamPage = () => {
-    // render(myArrayOfTeamMembers)
-    // array 
-    //     const myTeam = [];
-    //     myTeam.push(new Manager(response.managerName, response.managerId, response.managerEmail, response.managerOfficeNumber));
-
-    // console.log(myTeam);
+    
+    const teamHtmlFile = render(myTeam);
+    
+    fs.writeFile(outputPath, teamHtmlFile, err =>
+        err ? console.error(err) : console.log('Well done, your team is ready to view in HTML file!'))
 }
