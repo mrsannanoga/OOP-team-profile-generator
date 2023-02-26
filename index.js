@@ -93,15 +93,17 @@ const nextEmployeeChoice = () => {
         message: "Choose, which type of employee you would you like to add next, please.",
         choices: ["Engineer", "Intern", "Team is ready, no need to add any more"]
     }]).then(response => {
-        if (response === "Engineer") {
-            engineerQuestions()
-        }
-        else if (response === "Intern") {
-            internQuestions()
-        }
-        else {
-            generateTeamPage()
-        }
+        switch(response.employeeType) {
+            case "Engineer":
+              engineerQuestions();
+              break;
+            case "Intern":
+              internQuestions();
+              break;
+    
+            default:
+              generateTeamPage();
+          }
     })
 }
 
@@ -241,7 +243,7 @@ const internQuestions = () => {
 const generateTeamPage = () => {
     
     const teamHtmlFile = render(myTeam);
-    
+
     fs.writeFile(outputPath, teamHtmlFile, err =>
         err ? console.error(err) : console.log('Well done, your team is ready to view in HTML file!'))
 }
