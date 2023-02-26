@@ -10,11 +10,12 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./src/page-template.js");
 const { string } = require("yargs");
+const { isNumberObject } = require("util/types");
 
 
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
 
-// array 
+// array which collect all team's members data 
 const myTeam = [];
 
 // manager questions
@@ -25,7 +26,7 @@ const managerQuestions = () =>
             name: "managerName",
             message: "Enter the manager's name, please.",
             validate: managerNameInput => {
-                if (managerNameInput) {
+                if (managerNameInput ) {
                     return true;
                 } else {
                     console.log("Menager's name is required!");
@@ -93,17 +94,24 @@ const nextEmployeeChoice = () => {
         message: "Choose, which type of employee you would you like to add next, please.",
         choices: ["Engineer", "Intern", "Team is ready, no need to add any more"]
     }]).then(response => {
-        switch(response.employeeType) {
-            case "Engineer":
-              engineerQuestions();
-              break;
-            case "Intern":
-              internQuestions();
-              break;
+        // switch(response.employeeType) {
+        //     case "Engineer":
+        //       engineerQuestions();
+        //       break;
+        //     case "Intern":
+        //       internQuestions();
+        //       break;
     
-            default:
-              generateTeamPage();
-          }
+        //     default:
+        //       generateTeamPage();
+        //   }
+        if (response.employeeType === "Engineer"){
+            engineerQuestions();
+        }else if (response.employeeType === "Intern"){
+            internQuestions();
+        }else {
+            generateTeamPage();
+        }
     })
 }
 
