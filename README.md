@@ -13,7 +13,7 @@
   * [Credits](#credits)
 
 ## Description
-Presented project is a simple CLI application that takes in essential information about employees on a software engineering team and generates an HTML webpage that displays team's members profiles with all neede data in separate cards. It enables to have all needed data in one place, easy to get if needed. 
+Presented project is a simple CLI application that takes in essential information about employees on a software engineering team and generates an HTML webpage that displays team's members profiles with all neede data in separate cards. It enables to have all needed data in one place, easy to get if needed. You can find sample of html generarted [here](https://github.com/mrsannanoga/OOP-team-profile-generator/blob/main/output/team.html). 
 
 ![team html](../OOP-team-profile-generator/images/Screenshot%202023-02-27%20at%2019.31.16.png)
 
