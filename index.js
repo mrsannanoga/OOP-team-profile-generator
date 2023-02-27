@@ -9,8 +9,6 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./src/page-template.js");
-const { string } = require("yargs");
-const { isNumberObject } = require("util/types");
 
 
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
@@ -26,7 +24,7 @@ const managerQuestions = () =>
             name: "managerName",
             message: "Enter the manager's name, please.",
             validate: managerNameInput => {
-                if (managerNameInput ) {
+                if (managerNameInput) {
                     return true;
                 } else {
                     console.log("Menager's name is required!");
