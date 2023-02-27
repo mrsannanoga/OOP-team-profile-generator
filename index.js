@@ -94,17 +94,6 @@ const nextEmployeeChoice = () => {
         message: "Choose, which type of employee you would you like to add next, please.",
         choices: ["Engineer", "Intern", "Team is ready, no need to add any more"]
     }]).then(response => {
-        // switch(response.employeeType) {
-        //     case "Engineer":
-        //       engineerQuestions();
-        //       break;
-        //     case "Intern":
-        //       internQuestions();
-        //       break;
-    
-        //     default:
-        //       generateTeamPage();
-        //   }
         if (response.employeeType === "Engineer"){
             engineerQuestions();
         }else if (response.employeeType === "Intern"){
