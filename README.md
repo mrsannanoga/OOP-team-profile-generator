@@ -18,9 +18,9 @@ Presented project is a simple CLI application that takes in essential informatio
 ## Installation
 Before attempting to use this app make sure of having these programs installed on local machine:
 
-VS COde
-Terminal/GitBash
-Node.js
+- VS Code
+- Terminal/GitBash
+- Node.js
 
 
 To install OOP Team Profile Generator it is required to clone this repository to your local machine, install NPM and install NPM's inquirer.
