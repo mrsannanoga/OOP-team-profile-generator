@@ -15,7 +15,7 @@
 ## Description
 Presented project is a simple CLI application that takes in essential information about employees on a software engineering team and generates an HTML webpage that displays team's members profiles with all neede data in separate cards. It enables to have all needed data in one place, easy to get if needed. You can find sample of html generarted [here](https://github.com/mrsannanoga/OOP-team-profile-generator/blob/main/output/team.html). 
 
-![team html](../OOP-team-profile-generator/images/Screenshot%202023-02-27%20at%2019.31.16.png)
+![team html](../OOP-team-profile-generator/images/Screenshot%202023-02-27%20at%2019.31.16.jpg)
 
 ## Installation
 Before attempting to use this app make sure of having these programs installed on local machine:
@@ -30,7 +30,7 @@ To install OOP Team Profile Generator it is required to clone this repository to
 ## Usage
 To generate the Team HTML file run the command node index.js in the CLI and the inquirer package will begin prompts to fill all required employees information. All answers are automatically added to the HTML file which you are enable to open in browser anytime. 
 
-![CLI](../OOP-team-profile-generator/images/Screenshot%202023-02-27%20at%2019.28.44.png)
+![CLI](../OOP-team-profile-generator/images/Screenshot%202023-02-27%20at%2019.28.44.jpg)
 
 ## Contributing
 This project has been supported with starter code from bootcamp instructor.
